@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>智乃酱最可爱了(&gt;ω&lt;)</title>
+    <link rel="icon" type="image/x-icon" href="sources/chinochann.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!--相对窗口固定部分-->
+    <!--侧栏菜单-->
+    <div id="right-menu">
+        <div class="rm-block">
+            <img src="sources/chinochann.jpg" width="30px">
+            <p class="rm-text">啥都没有</p>
+        </div>
+        <div class="line"></div>
+        <div class="rm-block">
+            <img src="sources/chinochann.jpg" width="30px">
+            <p class="rm-text">这个也是</p>
+        </div>
+        <div class="line"></div>
+        <div class="rm-block" onmouseover="showAppDownload()" onmouseout="unshowAppDownload()">
+            <img src="sources/chinochann.jpg" width="30px">
+            <p class="rm-text">APP下载</p>
+        </div>
+        <div class="line"></div>
+        <div class="rm-block" style="height: 150px;">
+            <img src="sources/chinochann.jpg" width="30px">
+            <p class="rm-text">智乃超可爱！</p>
+        </div>
+    </div>
+    <div id="APP-download" onmouseover="showAppDownload()" onmouseout="unshowAppDownload()">
+        <p>并没有App</p>
+    </div>
+    <!--返回顶部-->
+    <div id="sc-back" onclick="backTop()">
+        <img src="sources/chinochann.jpg" width="50px">
+    </div>
+
+    <div id="heading" class="flex-col-center">
+        <div id="header">
+            <div id="header-center">
+                <img src="sources/chinochann.jpg" height="70px">
+            </div>
+            <!--火车头怎么画呀QAQ-->
+            <div id="header-items">
+                <from id="search">
+                    <input type="text">
+                    <img src="sources/chinochann.jpg" height="30px" onclick="submitFrom()">
+                </from>
+                <div id="header-info" onclick="noFunciton()">
+                    <span>切换语言&nbsp;&nbsp;登录&nbsp;&nbsp;注册</span>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div id="menu-center">
+                <div id="menu-items">
+                    <div class="menu-item" style="border-left: 2px solid white;">
+                        <p>首页</p>
+                    </div>
+                    <div class="menu-item" onmouseover="showMenuContent(0)" onmouseout="unshowMenuContent()">
+                        <p>施工中...</p>
+                    </div>
+                    <div class="menu-item" onmouseover="showMenuContent(1)" onmouseout="unshowMenuContent()">
+                        <p>施工中...</p>
+                    </div>
+                    <div class="menu-item" onmouseover="showMenuContent(2)" onmouseout="unshowMenuContent()">
+                        <p>施工中...</p>
+                    </div>
+                    <div class="menu-item" onmouseover="showMenuContent(3)" onmouseout="unshowMenuContent()">
+                        <p>战车服务</p>
+                    </div>
+                    <div class="menu-item" onmouseover="showMenuContent(4)" onmouseout="unshowMenuContent()">
+                        <p>施工中...</p>
+                    </div>
+                    <div class="menu-item" onmouseover="showMenuContent(5)" onmouseout="unshowMenuContent()">
+                        <p>施工中...</p>
+                    </div>
+                    <div class="menu-item" onmouseover="showMenuContent(6)" onmouseout="unshowMenuContent()">
+                        <p>施工中...</p>
+                    </div>
+                </div>
+                <div class="menu-content" onmouseover="showMenuContent(0)" onmouseout="unshowMenuContent()">0施工中...</div>
+                <div class="menu-content" onmouseover="showMenuContent(1)" onmouseout="unshowMenuContent()">1施工中...</div>
+                <div class="menu-content" onmouseover="showMenuContent(2)" onmouseout="unshowMenuContent()">2施工中...</div>
+                <div class="menu-content" onmouseover="showMenuContent(3)" onmouseout="unshowMenuContent()">
+                    &nbsp;&nbsp;&nbsp;&nbsp;( ﾟ∀ﾟ)<br> &nbsp;&nbsp;&nbsp;（- -)======<br> （⊙-⊙-⊙-⊙）<br>
+                </div>
+                <div class="menu-content" onmouseover="showMenuContent(4)" onmouseout="unshowMenuContent()">4施工中...</div>
+                <div class="menu-content" onmouseover="showMenuContent(5)" onmouseout="unshowMenuContent()">5施工中...</div>
+                <div class="menu-content" onmouseover="showMenuContent(6)" onmouseout="unshowMenuContent()">6施工中...</div>
+            </div>
+        </div>
+    </div>
+    <div id="body" class="flex-col-center">
+        <!--信息查询框-->
+        <div id="b1">
+            <div id="info">
+                <div id="info-selections">
+                    <button class="info-selection" onclick="changeFrom(0)" style="background-color:navajowhite;"></button>
+                    <button class="info-selection" onclick="changeFrom(1)"></button>
+                    <button class="info-selection" onclick="changeFrom(2)"></button>
+                </div>
+                <div class="info-content" style="display: block;">
+                    <div id="tickets-buttons">
+                        <button class="tickets-button" id="tickets-btn-1">
+                            <img src="sources/chinochann.jpg" width="20px">
+                            <p>信息查询</p>
+                        </button>
+                        <button class="tickets-button" onclick="pushAlert()">
+                            <img src="sources/chinochann.jpg" width="20px">
+                            <p>施工中...</p>
+                        </button>
+                        <button class="tickets-button" onclick="pushAlert()">
+                            <img src="sources/chinochann.jpg" width="20px">
+                            <p>施工中...</p>
+                        </button>
+                        <button class="tickets-button" onclick="pushAlert()">
+                            <img src="sources/chinochann.jpg" width="20px">
+                            <p>施工中...</p>
+                        </button>
+                    </div>
+                    <div id="tickets-from">
+                        <from>
+                            <div id="exchange">
+                                <div></div>
+                                <img src="sources/chinochann.jpg" width="25px" onclick="exchangeText()">
+                            </div>
+                            <div class="from-input">
+                                <input type="text" class="positionInput" value="点右边的圆可以交换">
+                                <p>第一个框框</p>
+                            </div>
+                            <div class="from-input">
+                                <input type="text" class="positionInput" value="跟这里交换哦">
+                                <p>第二个框框</p>
+                            </div>
+                            <div class="from-input">
+                                <input type="text">
+                                <p>第三个框框</p>
+                            </div>
+                            <div id="from-check">
+                                <span>一个选项框&nbsp;<input type="checkbox"></span>
+                                <span>另一个选项框&nbsp;<input type="checkbox"></span>
+                            </div>
+                            <button type="submit" onclick="submitFrom()" value="查询">查&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;询</button>
+                        </from>
+                    </div>
+                </div>
+                <div class="info-content">
+                    2施工中...
+                </div>
+                <div class="info-content">
+                    3施工中...
+                </div>
+            </div>
+            <!--轮播图控制-->
+            <div id="img-control-box">
+                <div id="img-controls">
+                    <span class="img-control-left" onclick="moveLeft()"></span>
+                    <span class="img-control" onclick="moveTo(1)" style="background-color: lightgray;"></span>
+                    <span class="img-control" onclick="moveTo(2)"></span>
+                    <span class="img-control" onclick="moveTo(3)"></span>
+                    <span class="img-control-right" onclick="moveRight()"></span>
+                </div>
+            </div>
+        </div>
+        <!--轮播图-->
+        <div id="img-box-box" onclick="noImg()">
+            <!--div套娃-->
+            <div id="img-box">
+                <!--
+                <img src="sources/1.jpg">
+                <img src="sources/1.jpg">
+                <img src="sources/2.jpg">
+                <img src="sources/1.jpg">
+                <img src="sources/1.jpg">
+                -->
+            </div>
+        </div>
+        <!--一堆链接-->
+        <div id="b2">
+            <!--球-->
+            <div id="b2-1">
+                <div class="b2-1-item">
+                    <img src="sources/chinochann.jpg" width="90px">
+                    <p>趴~</p>
+                </div>
+                <div class="b2-1-item">
+                    <img src="sources/chinochann.jpg" width="90px">
+                    <p>趴~</p>
+                </div>
+                <div class="b2-1-item">
+                    <img src="sources/chinochann.jpg" width="90px">
+                    <p>趴~</p>
+                </div>
+                <div class="b2-1-item">
+                    <img src="sources/chinochann.jpg" width="90px">
+                    <p>趴~</p>
+                </div>
+                <div class="b2-1-item">
+                    <img src="sources/chinochann.jpg" width="90px">
+                    <p>趴~</p>
+                </div>
+                <div class="b2-1-item">
+                    <img src="sources/chinochann.jpg" width="90px">
+                    <p>趴~</p>
+                </div>
+                <div class="b2-1-item">
+                    <img src="sources/chinochann.jpg" width="90px">
+                    <p>趴~</p>
+                </div>
+            </div>
+            <!--方框-->
+            <div id="b2-2">
+                <div class="b2-2-content">
+                    <img src="sources/chinochann2.jpg" width="550px" height="150px">
+                </div>
+                <div class="b2-2-content">
+                    <img src="sources/chinochann2.jpg" width="550px" height="150px">
+                </div>
+                <div class="b2-2-content">
+                    <img src="sources/chinochann2.jpg" width="550px" height="150px">
+                </div>
+                <div class="b2-2-content">
+                    <img src="sources/chinochann2.jpg" width="550px" height="150px">
+                </div>
+            </div>
+            <!--旅游-->
+            <div id="b2-3">
+                <div id="b2-3-menu">
+                    <p>
+                        &nbsp;赞助智乃
+                    </p>
+                    <a>
+                        没有更多&gt;
+                    </a>
+                </div>
+                <div id="b2-3-line">
+                    <div id="b2-3-underline"></div>
+                </div>
+                <div id="b2-3-contents">
+                    <div class="b2-3-content">
+                        <img src="sources/chinochann.jpg" width="150px">
+                        <div class="b2-3-info">
+                            <p>智乃很可爱，想让你给她买瓶中船~</p>
+                            <span>￥1</span>
+                        </div>
+                    </div>
+                    <div class="b2-3-content">
+                        <img src="sources/chinochann.jpg" width="150px">
+                        <div class="b2-3-info">
+                            <p>智乃很可爱，想让你给她买瓶中船~</p>
+                            <span>￥6</span>
+                        </div>
+                    </div>
+                    <div class="b2-3-content">
+                        <img src="sources/chinochann.jpg" width="150px">
+                        <div class="b2-3-info">
+                            <p>智乃很可爱，想让你给她买瓶中船~</p>
+                            <span>￥12</span>
+                        </div>
+                    </div>
+                    <div class="b2-3-content">
+                        <img src="sources/chinochann.jpg" width="150px">
+                        <div class="b2-3-info">
+                            <p>智乃很可爱，想让你给她买瓶中船~</p>
+                            <span>￥30</span>
+                        </div>
+                    </div>
+                    <div class="b2-3-content">
+                        <img src="sources/chinochann.jpg" width="150px">
+                        <div class="b2-3-info">
+                            <p>智乃很可爱，想让你给她买瓶中船~</p>
+                            <span>￥68</span>
+                        </div>
+                    </div>
+                    <div class="b2-3-content">
+                        <img src="sources/chinochann.jpg" width="150px">
+                        <div class="b2-3-info">
+                            <p>智乃很可爱，想让你给她买瓶中船~</p>
+                            <span>￥128</span>
+                        </div>
+                    </div>
+                    <div class="b2-3-content">
+                        <img src="sources/chinochann.jpg" width="150px">
+                        <div class="b2-3-info">
+                            <p>智乃很可爱，想让你给她买瓶中船~</p>
+                            <span>￥328</span>
+                        </div>
+                    </div>
+                    <div class="b2-3-content">
+                        <img src="sources/chinochann.jpg" width="150px">
+                        <div class="b2-3-info">
+                            <p>智乃很可爱，想让你给她买瓶中船~</p>
+                            <span>￥648</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--最新发布...-->
+        <div id="b3">
+            <div id="b3-tabs">
+                <button class="b3-tab" onclick="showContent(0)" style="border:2px solid gray;">最新发布</button>
+                <button class="b3-tab" onclick="showContent(1)">常见问题</button>
+                <button class="b3-tab" onclick="showContent(2)">信用信息</button>
+            </div>
+            <div id="b3-contents">
+                <div class="b3-content" style="display: flex;">
+                    <div class="b3-list">
+                        <div class="b3-list-pot"></div>
+                        <div class="b3-list-text">
+                            <a href="about:blank" target="_blank">什么也没有~</a>
+                        </div>
+                        <div class="b3-list-date">
+                            <p>2021-02-24</p>
+                        </div>
+                    </div>
+                    <div class="b3-list">
+                        <div class="b3-list-pot"></div>
+                        <div class="b3-list-text">
+                            <a href="about:blank" target="_blank">这里也什么都没有~</a>
+                        </div>
+                        <div class="b3-list-date">
+                            <p>2021-02-24</p>
+                        </div>
+                    </div>
+                    <div class="b3-list">
+                        <div class="b3-list-pot"></div>
+                        <div class="b3-list-text">
+                            <a href="about:blank" target="_blank">什么也没有，多敲上几个字显得好看</a>
+                        </div>
+                        <div class="b3-list-date">
+                            <p>2021-02-24</p>
+                        </div>
+                    </div>
+                    <div class="b3-list">
+                        <div class="b3-list-pot"></div>
+                        <div class="b3-list-text">
+                            <a href="about:blank" target="_blank">什么也没有，多敲上几个字显得好看</a>
+                        </div>
+                        <div class="b3-list-date">
+                            <p>2021-02-24</p>
+                        </div>
+                    </div>
+                    <div class="b3-list">
+                        <div class="b3-list-pot"></div>
+                        <div class="b3-list-text">
+                            <a href="about:blank" target="_blank">什么也没有，多敲上几个字显得好看</a>
+                        </div>
+                        <div class="b3-list-date">
+                            <p>2021-02-24</p>
+                        </div>
+                    </div>
+                    <div class="b3-list">
+                        <div class="b3-list-pot"></div>
+                        <div class="b3-list-text">
+                            <a href="about:blank" target="_blank">什么也没有，多敲上几个字显得好看</a>
+                        </div>
+                        <div class="b3-list-date">
+                            <p>2021-02-24</p>
+                        </div>
+                    </div>
+                    <div class="b3-list">
+                        <div class="b3-list-pot"></div>
+                        <div class="b3-list-text">
+                            <a href="about:blank" target="_blank">什么也没有，多敲上几个字显得好看</a>
+                        </div>
+                        <div class="b3-list-date">
+                            <p>2021-02-24</p>
+                        </div>
+                    </div>
+                    <div class="b3-list">
+                        <div class="b3-list-pot"></div>
+                        <div class="b3-list-text">
+                            <a href="about:blank" target="_blank">什么也没有，多敲上几个字显得好看</a>
+                        </div>
+                        <div class="b3-list-date">
+                            <p>2021-02-24</p>
+                        </div>
+                    </div>
+                    <div class="b3-list">
+                        <div class="b3-list-pot"></div>
+                        <div class="b3-list-text">
+                            <a href="about:blank" target="_blank">什么也没有，多敲上几个字显得好看</a>
+                        </div>
+                        <div class="b3-list-date">
+                            <p>2021-02-24</p>
+                        </div>
+                    </div>
+                    <div class="b3-list">
+                        <div class="b3-list-pot"></div>
+                        <div class="b3-list-text">
+                            <a href="about:blank" target="_blank">广告位招租...</a>
+                        </div>
+                        <div class="b3-list-date">
+                            <p>2021-02-24</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="b3-content">
+                    2施工中...
+                </div>
+                <div class="b3-content">
+                    3施工中...
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom" class="flex-col-center">
+        <div id="bottom-href">
+            <p>并没有友链和二维码QwQ</p>
+            <p style="margin: 10px 0;">页面布局抄的<a href="https://www.12306.cn/index/">12306</a></p>
+            <p>Github地址<a href="about:blank">还没有更新</a></p>
+        </div>
+        <div id="bottom-txt">
+            <p>并没有版权，作者大概是叫ERUIHNIYHBKBNF的菜菜QwQ</p>
+        </div>
+
+</html>
